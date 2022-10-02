@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bienvenidos
+{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content"></div>
+        <div class="left">
+            <h1>I am SOFTWARE DEVELOPMENT</h1>
+            <h1>Tomas Ferros</h1>
+            <p>I build applications in HTML, CSS, Python, MySQL, Flask, RESTFUL API.</p>
+            <a href="#contacto" class="btn">Contact</a>
+        </div>
+        <div class="right">
+            <img src="{{ url_for('static', filename='big-data.png') }}" width="600px" />
+        </div>
+    </div>
+</div>
+{% include 'portfolio/section-first.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+{% endblock %}
